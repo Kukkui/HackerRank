@@ -23,9 +23,9 @@ bool isReplicaNote(){
    }
    for (unsigned int i = 0; i < numRans; ++i){
       std::cin >> currWord;
-      if (words.count(currWord)){
+      if( words.count(currWord)){
          words[currWord]--;
-         if(words[currWord] < 0){
+         if (words[currWord] < 0){
             return false;
          }
       } else {
